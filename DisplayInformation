@@ -1,0 +1,6 @@
+package training.methodref;
+
+public interface DisplayInformation {
+
+    void display();
+}
