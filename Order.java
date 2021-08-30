@@ -13,18 +13,28 @@ public class Order{
     //private Currency currency;
     private String currency;
     private double amount;
-    private Side side;
+    //private Side side;
 
-    public Order(String currency, double amount, Side side) {
+    public Order(String currency, double amount) {
+        this.currency = currency;
+        this.amount = amount;
+    }
+
+    public Order(double amount) {
+        this.amount=amount;
+    }
+
+
+    /**    public Order(String currency, double amount, Side side) {
         this.currency = currency;
         this.amount = amount;
         this.side = side;
     }
-
+*/
     public  boolean match(Order order){
         return true;
     }
-
+/**
     public Side getSide() {
         return side;
     }
@@ -32,7 +42,7 @@ public class Order{
     public void setSide(Side side) {
         this.side = side;
     }
-
+**/
     public String getCurrency() {
         return currency;
     }
@@ -55,7 +65,15 @@ public class Order{
         return "Order{" +
                 "currency='" + currency + '\'' +
                 ", amount=" + amount +
-                ", side=" + side +
+                //", side=" + side +
                 '}';
+    }
+
+    public void displayAmount(){
+            System.out.println(this.amount);
+    }
+
+    public static void displayCurrency(){
+        System.out.println("Static Method displayCurrency");
     }
 }
