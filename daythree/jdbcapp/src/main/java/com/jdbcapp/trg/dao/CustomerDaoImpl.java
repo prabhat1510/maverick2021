@@ -89,7 +89,7 @@ public class CustomerDaoImpl implements CustomerDAO {
 	public Integer addCustomer(Customer customer) throws SQLException {
 		try (Connection connection = DriverManager.getConnection(
 				"jdbc:postgresql://127.0.0.1:5432/maveric", "postgres", "password");
-			 CallableStatement callableStatement = connection.prepareCall("{call add_customer(?,?,?,?,?)}");){
+			 CallableStatement callableStatement = connection.prepareCall("call add_customer(?,?,?,?,?)");){
 			callableStatement.setInt(1, customer.getCustomerId());
 			callableStatement.setString(2, customer.getCustomerName());
 			// convert LocalDate to java.sql.Date
