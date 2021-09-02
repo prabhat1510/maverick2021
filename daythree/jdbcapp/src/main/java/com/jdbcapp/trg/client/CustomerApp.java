@@ -57,6 +57,8 @@ public class CustomerApp {
 	}
 
 	private static void populateCustomer(Customer customerNew) {
+		System.out.println("Enter customer id: ");
+		customerNew.setCustomerId(Integer.parseInt(scanner.nextLine()));
 		System.out.println("Enter customer name: ");
 		customerNew.setCustomerName(scanner.nextLine());
 		System.out.println("Enter birthdate:(yyyy-mm-dd) ");

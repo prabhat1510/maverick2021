@@ -1,0 +1,13 @@
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\model\Customer.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\dao\CustomerDAO.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\client\CustomerApp.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\dao\CustomerDaoImpl.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\service\CustomerService.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\utility\PostgresSQLDataSource.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\service\CustomerServiceImpl.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\service\CustomerValidator.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\exception\CustomerException.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\utility\TestConnection.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\dao\CustomerDataImpl.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\dao\QueryMapper.java
+C:\Users\admi\Documents\GitHub\maverick2021\daythree\jdbcapp\src\main\java\com\jdbcapp\trg\utility\MySQLDataSource.java

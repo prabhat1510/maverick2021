@@ -10,5 +10,6 @@ public interface CustomerService {
 	public abstract List<Customer> getAllCustomers() throws CustomerException;
 	public abstract Integer addCustomer(Customer customer) throws CustomerException;
 	public abstract Integer updateCustomer(Customer customer) throws CustomerException;
-	public abstract Integer deleteCustomer(Integer customerId) throws CustomerException; 
+	public abstract Integer deleteCustomer(Integer customerId) throws CustomerException;
+
 }

@@ -30,7 +30,8 @@ public class CustomerServiceImpl implements CustomerService{
 	public List<Customer> getAllCustomers() throws CustomerException {
 		try {			
 			//To apply business rules
-			return customerDAO.getAllCustomers();
+			//return customerDAO.getAllCustomers();
+			return customerDAO.getCustomers();
 		}catch(SQLException e) {
 			throw new CustomerException("SQLException trapped in Service Layer: "+e.getMessage(),e);
 		}catch(Exception e) {
