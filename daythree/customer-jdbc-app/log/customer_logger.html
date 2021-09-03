@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Sep 03 10:20:36 IST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.jdbcapp.trg.dao.CustomerDaoImpl category">com.jdbcapp.trg.dao.CustomerDaoImpl</td>
+<td title="Message">Invalide CustomerId</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.jdbcapp.trg.dao.CustomerDaoImpl category">com.jdbcapp.trg.dao.CustomerDaoImpl</td>
+<td title="Message">Invalid CustomerId</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid CustomerId
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.jdbcapp.trg.dao.CustomerDaoImpl.getCustomerById(CustomerDaoImpl.java:36)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.jdbcapp.trg.service.CustomerServiceImpl.getCustomerById(CustomerServiceImpl.java:18)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.jdbcapp.trg.client.CustomerApp.getCustomerById(CustomerApp.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.jdbcapp.trg.client.CustomerApp.main(CustomerApp.java:31)
+</td></tr>
+
+<tr>
+<td>14</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.jdbcapp.trg.client.CustomerApp category">com.jdbcapp.trg.client.CustomerApp</td>
+<td title="Message">Invalid Id: 2</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">CustomerException: Invalid Id: 2
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Invalid Id: 2
+<br>&nbsp;&nbsp;&nbsp;&nbsp;null
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.jdbcapp.trg.client.CustomerApp.main(CustomerApp.java:35)
+</td></tr>

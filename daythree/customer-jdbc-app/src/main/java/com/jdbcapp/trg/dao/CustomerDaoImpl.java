@@ -32,6 +32,7 @@ public class CustomerDaoImpl implements CustomerDAO {
 				daoLogger.info(customerId + " customer retrieved");
 				return customer;
 			} else {
+				daoLogger.info("Invalide CustomerId");
 				throw new SQLException("Invalid CustomerId");
 			}
 

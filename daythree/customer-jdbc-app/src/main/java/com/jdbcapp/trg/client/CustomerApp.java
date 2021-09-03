@@ -10,6 +10,7 @@ import com.jdbcapp.trg.exception.CustomerException;
 import com.jdbcapp.trg.model.Customer;
 import com.jdbcapp.trg.service.CustomerService;
 import com.jdbcapp.trg.service.CustomerServiceImpl;
+import org.apache.log4j.PropertyConfigurator;
 
 public class CustomerApp {
 	private static Scanner scanner=new Scanner(System.in);
@@ -18,6 +19,8 @@ public class CustomerApp {
 								Logger.getLogger(CustomerApp.class);
 	public static void main( String[] args )    {
 		boolean flag=true;
+		String log4jConfPath = "resource/log4j.properties";
+		PropertyConfigurator.configure(log4jConfPath);
 		try {
 			while(flag) {
 				System.out.println("Enter 1. get customer 2. get all customers 3. add customer 4. update customer 5. delete customer 6. exit");
