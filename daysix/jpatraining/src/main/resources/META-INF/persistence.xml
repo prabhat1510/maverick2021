@@ -9,6 +9,14 @@
 		<class>main.java.jpatraining.entities.stc.Manager</class>
 		<class>main.java.jpatraining.entities.tpc.EmployeeTPC</class>
 		<class>main.java.jpatraining.entities.tpc.ManagerTPC</class>
+		<class>main.java.jpatraining.manytomany.Order</class>
+		<class>main.java.jpatraining.manytomany.Product</class>
+		<class>main.java.jpatraining.onetomany.Department</class>
+		<class>main.java.jpatraining.onetomany.Employee</class>
+		<class>main.java.jpatraining.onetoonebi.AddressBi</class>
+		<class>main.java.jpatraining.onetoonebi.StudentBi</class>
+		<class>main.java.jpatraining.onetooneuni.Address</class>
+		<class>main.java.jpatraining.onetooneuni.Student</class>
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"
