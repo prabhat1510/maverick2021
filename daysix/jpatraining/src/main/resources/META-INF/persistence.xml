@@ -5,7 +5,7 @@
 		<class>main.java.jpatraining.entities.Member</class>
 		<class>main.java.jpatraining.entities.joined.EmployeeJS</class>
 		<class>main.java.jpatraining.entities.joined.ManagerJS</class>
-		<class>main.java.jpatraining.entities.stc.Employee</class>
+		<class>main.java.jpatraining.entities.stc.Employees</class>
 		<class>main.java.jpatraining.entities.stc.Manager</class>
 		<class>main.java.jpatraining.entities.tpc.EmployeeTPC</class>
 		<class>main.java.jpatraining.entities.tpc.ManagerTPC</class>

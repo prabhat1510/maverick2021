@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 @Entity
 //value for manager rows in Discriminator column
 @DiscriminatorValue("MGR")	
-public class Manager extends Employee {
+public class Manager extends Employees {
 	private static final long serialVersionUID = 1L;
 	
 	private String departmentName;

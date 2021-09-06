@@ -23,7 +23,7 @@ import javax.persistence.Table;
 		discriminatorType=DiscriminatorType.STRING)   
 //parent rows will have this value in Discriminator column
 @DiscriminatorValue("EMP")		
-public class Employee implements Serializable {	
+public class Employees implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

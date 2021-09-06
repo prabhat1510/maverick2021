@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceException;
 
-import main.java.jpatraining.entities.stc.Employee;
+import main.java.jpatraining.entities.stc.Employees;
 import main.java.jpatraining.entities.stc.Manager;
 
 public class STDemo {
@@ -17,7 +17,7 @@ public class STDemo {
 			EMF=Persistence.createEntityManagerFactory("training");
 			em=EMF.createEntityManager();
 			em.getTransaction().begin();
-			Employee e1= new Employee();
+			Employees e1= new Employees();
 			e1.setName("Smith");
 			e1.setSalary(67865.50);
 			em.persist(e1);
