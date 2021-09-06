@@ -15,7 +15,7 @@ public class JSDemo {
 	
 	public static void main(String[] args) {
 		try {
-			EMF=Persistence.createEntityManagerFactory("jpa-inheritance-app");
+			EMF=Persistence.createEntityManagerFactory("training");
 			em=EMF.createEntityManager();
 			em.getTransaction().begin();
 			EmployeeJS e1= new EmployeeJS();
@@ -23,7 +23,7 @@ public class JSDemo {
 			e1.setSalary(67865.50);
 			em.persist(e1);
 			ManagerJS m1=new ManagerJS();
-			m1.setName("Ravi Kumar");			
+			m1.setName("Ravi Kumar");
 			m1.setSalary(123456.0);
 			m1.setDepartmentName("Accounts");
 			em.persist(m1);

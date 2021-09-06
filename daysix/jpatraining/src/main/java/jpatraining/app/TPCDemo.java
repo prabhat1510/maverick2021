@@ -1,5 +1,8 @@
 package main.java.jpatraining.app;
 
+import main.java.jpatraining.entities.tpc.EmployeeTPC;
+import main.java.jpatraining.entities.tpc.ManagerTPC;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -14,7 +17,7 @@ public class TPCDemo {
 	
 	public static void main(String[] args) {
 		try {
-			EMF=Persistence.createEntityManagerFactory("jpa-inheritance-app");
+			EMF=Persistence.createEntityManagerFactory("training");
 			em=EMF.createEntityManager();
 			em.getTransaction().begin();
 			EmployeeTPC e1= new EmployeeTPC();
@@ -22,8 +25,8 @@ public class TPCDemo {
 			e1.setSalary(67865.50);
 			em.persist(e1);
 			ManagerTPC m1=new ManagerTPC();
-			//m1.setName("Ravi Kumar");
-			//m1.setSalary(123456.0);
+			m1.setName("Ravi Kumar");
+			m1.setSalary(123456.0);
 			m1.setDepartmentName("Accounts");
 			em.persist(m1);
 			em.getTransaction().commit();

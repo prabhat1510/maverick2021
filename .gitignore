@@ -107,3 +107,14 @@ daysix/jpatraining/target/classes/jpatraining/dao/MemberDAOImpl.class
 daysix/jpatraining/target/classes/jpatraining/dao/MemberDAO.class
 daysix/jpatraining/target/classes/jpatraining/app/package-info.class
 daysix/jpatraining/target/classes/jpatraining/app/MemberApp.class
+*.class
+daythree/customer-jdbc-app/.idea/sonarlint/issuestore/index.pb
+daythree/customer-jdbc-app/src/main/java/com/jdbcapp/trg/dao/CustomerDataImpl.java
+daythree/customer-jdbc-app/target/classes/com/jdbcapp/trg/client/CustomerApp.class
+daythree/customer-jdbc-app/target/classes/com/jdbcapp/trg/dao/CustomerDaoImpl.class
+daythree/customer-jdbc-app/target/customer-jdbc-app-0.0.1-SNAPSHOT.jar
+daythree/customer-jdbc-app/target/maven-archiver/pom.properties
+daythree/customer-jdbc-app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+daythree/customer-jdbc-app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+daythree/customer-jdbc-app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+daythree/jdbcapp/.idea/sonarlint/issuestore/index.pb

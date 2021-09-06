@@ -5,8 +5,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceException;
 
-import com.audintel.jpa.stc.Employee;
-import com.audintel.jpa.stc.Manager;
+import main.java.jpatraining.entities.stc.Employee;
+import main.java.jpatraining.entities.stc.Manager;
 
 public class STDemo {
 	private static EntityManagerFactory EMF=null;
@@ -14,7 +14,7 @@ public class STDemo {
 	
 	public static void main(String[] args) {
 		try {
-			EMF=Persistence.createEntityManagerFactory("jpa-inheritance-app");
+			EMF=Persistence.createEntityManagerFactory("training");
 			em=EMF.createEntityManager();
 			em.getTransaction().begin();
 			Employee e1= new Employee();
