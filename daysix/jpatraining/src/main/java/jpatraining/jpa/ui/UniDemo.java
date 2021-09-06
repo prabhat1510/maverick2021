@@ -22,12 +22,12 @@ public class UniDemo {
 
 			em.getTransaction().begin();
 			Student student = new Student();
-			student.setName("Lakshmi");
+			student.setName("Mittal");
 			Address homeAddress = new Address();
-			homeAddress.setStreet("MG Road");
-			homeAddress.setCity("Pune");
-			homeAddress.setState("Maharastra");
-			homeAddress.setZipCode("400001");
+			homeAddress.setStreet("Triplicane");
+			homeAddress.setCity("Chennai");
+			homeAddress.setState("TamilNadu");
+			homeAddress.setZipCode("400003");
 
 			//inject address into student
 			student.setAddress(homeAddress);
@@ -35,7 +35,8 @@ public class UniDemo {
 			//persist only student, no need to persist Address explicitly
 			em.persist(student);
 			em.getTransaction().commit();
-
+			String message =deleteStudent(student);
+			System.out.println(message);
 			System.out.println("Added one student with address to database.");
 		}catch(PersistenceException e) {
 			e.printStackTrace();
@@ -72,5 +73,26 @@ public class UniDemo {
 			em.close();
 			factory.close();
 		}**/
+	}
+
+	public static String deleteStudent(Student student){
+
+		EntityManagerFactory factory =null;
+		EntityManager em=null;
+		try {
+			factory =
+					Persistence.createEntityManagerFactory("training");
+			em = factory.createEntityManager();
+
+			em.getTransaction().begin();
+			Student student1;
+			student1 = em.find(Student.class,student.getStudentId());
+			em.remove(student1);
+			em.getTransaction().commit();
+		}catch (Exception e){
+			e.printStackTrace();
+
+		}
+		return "Student deleted successfully";
 	}
 }
