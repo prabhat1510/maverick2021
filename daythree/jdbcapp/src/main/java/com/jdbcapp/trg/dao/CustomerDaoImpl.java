@@ -97,6 +97,7 @@ public class CustomerDaoImpl implements CustomerDAO {
 			callableStatement.setLong(4, customer.getMobile());
 			callableStatement.setString(5, customer.getEmail());
 			int n = callableStatement.executeUpdate();
+
 			return n;
 		} catch (SQLException e) {
 			daoLogger.error(e.getMessage(), e);
@@ -143,6 +144,8 @@ public class CustomerDaoImpl implements CustomerDAO {
 			Connection conn = DriverManager.getConnection(props.getProperty("db.url"),props.getProperty("db.username"), props.getProperty("db.password"));
 			ResultSet resultSet = conn.createStatement().executeQuery(QueryMapper.GET_ALL_CUSTOMERS);
 			//System.out.println("----Query Executed Successfully---");
+			System.out.println(conn.getTransactionIsolation());
+			//conn.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
 			while (resultSet.next()) {
 				customer = new Customer();
 				populateCustomer(customer, resultSet);
