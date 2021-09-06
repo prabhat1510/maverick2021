@@ -1,4 +1,4 @@
-package jpatraining.dao;
+package main.java.jpatraining.dao;
 
 import java.util.List;
 

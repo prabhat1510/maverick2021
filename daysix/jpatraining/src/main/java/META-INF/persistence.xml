@@ -3,6 +3,7 @@
 	<persistence-unit name="training">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>jpatraining.entities.Member</class>
+		<class>jpatraining.entities.Customer</class>
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"

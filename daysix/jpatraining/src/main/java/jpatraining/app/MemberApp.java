@@ -1,11 +1,11 @@
 /**
  * 
  */
-package jpatraining.app;
+package main.java.jpatraining.app;
 
 import java.util.List;
 
-import jpatraining.dao.MemberDAOImpl;
+import main.java.jpatraining.dao.MemberDAOImpl;
 import jpatraining.entities.Member;
 
 /**
