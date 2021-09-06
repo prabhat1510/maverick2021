@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jpatraining.entities;
+package main.java.jpatraining.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -42,7 +42,7 @@ public class Member {
 		return memberName;
 	}
 	/**
-	 * @param name the name to set
+	 * @param memberName the name to set
 	 */
 	public void setName(String memberName) {
 		this.memberName = memberName;

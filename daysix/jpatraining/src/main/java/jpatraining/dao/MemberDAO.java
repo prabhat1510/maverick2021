@@ -3,9 +3,9 @@
  */
 package main.java.jpatraining.dao;
 
-import java.util.List;
+import main.java.jpatraining.entities.Member;
 
-import jpatraining.entities.Member;
+import java.util.List;
 
 /**
  * @author admi

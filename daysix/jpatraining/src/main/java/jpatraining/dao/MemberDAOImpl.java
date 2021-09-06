@@ -5,8 +5,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
-import jpatraining.entities.Member;
-import jpatraining.utility.EntityManagerUtility;
+import main.java.jpatraining.entities.Member;
+import main.java.jpatraining.utility.EntityManagerUtility;
 
 public class MemberDAOImpl implements MemberDAO {
 

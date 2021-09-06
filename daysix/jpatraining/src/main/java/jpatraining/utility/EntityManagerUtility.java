@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jpatraining.utility;
+package main.java.jpatraining.utility;
 
 /**
  * @author admi
