@@ -1,5 +1,6 @@
 package main.java.jpatraining.jpa.ui;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -17,25 +18,25 @@ public class OneToMany {
 			Persistence.createEntityManagerFactory("training");
 	public static void main(String[] args) {
 		EntityManager em=null;		
-//		try {
-//			em = EMF.createEntityManager();
-//			em.getTransaction().begin();
-//			Department department=
-//					new Department(10,"ACCOUNTS","MUMBAI");
-//			Employee employee1= new Employee(1001,"Smith",new Date());
-//			Employee employee2= new Employee(1002,"Jones",new Date());
-//			employee1.setDepartment(department);
-//			employee2.setDepartment(department);
-//			em.persist(employee1);
-//			em.persist(employee2);
-//			em.getTransaction().commit();						
-//		}catch(PersistenceException e) {
-//			em.getTransaction().rollback();
-//			e.printStackTrace();
-//		}finally {
-//			em.close();
-//		}
-		
+		try {
+			em = EMF.createEntityManager();
+			em.getTransaction().begin();
+			Department department=
+					new Department(10,"ACCOUNTS","MUMBAI");
+			Employee employee1= new Employee(1001,"Smith",new Date());
+			Employee employee2= new Employee(1002,"Jones",new Date());
+			employee1.setDepartment(department);
+			employee2.setDepartment(department);
+			em.persist(employee1);
+			em.persist(employee2);
+			em.getTransaction().commit();
+		}catch(PersistenceException e) {
+			em.getTransaction().rollback();
+			e.printStackTrace();
+		}finally {
+			em.close();
+		}
+		/**
 		try {
 			em = EMF.createEntityManager();
 			em.getTransaction().begin();
@@ -60,7 +61,7 @@ public class OneToMany {
 		}finally {
 			em.close();
 		}
-
+**/
 }		
 
 }
