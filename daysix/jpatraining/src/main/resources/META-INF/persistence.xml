@@ -3,6 +3,12 @@
 	<persistence-unit name="training">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>main.java.jpatraining.entities.Member</class>
+		<class>main.java.jpatraining.entities.joined.EmployeeJS</class>
+		<class>main.java.jpatraining.entities.joined.ManagerJS</class>
+		<class>main.java.jpatraining.entities.stc.Employee</class>
+		<class>main.java.jpatraining.entities.stc.Manager</class>
+		<class>main.java.jpatraining.entities.tpc.EmployeeTPC</class>
+		<class>main.java.jpatraining.entities.tpc.ManagerTPC</class>
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"
@@ -18,6 +24,6 @@
 			value="org.hibernate.dialect.PostgreSQL82Dialect " />
 		<property name="hibernate.show_sql" value="true" />
 	</properties>
-		
+
 	</persistence-unit>
 </persistence>
