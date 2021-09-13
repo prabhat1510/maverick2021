@@ -8,6 +8,7 @@ class Person implements Serializable
      * Generated from Eclipse IDE
      */
     private static final long serialVersionUID = -5551642649093889857L;
+    //private static final long serialVersionUID = -7L;
     /**
      * Persitable fields
      */
