@@ -9,8 +9,6 @@ import javax.persistence.Id;
 @Entity
 public class CustomerInfo {
     @Id
-    @Column(name = "id", nullable = false)
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     public Long getId() {

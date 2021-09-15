@@ -12,14 +12,20 @@ import javax.persistence.OneToOne;
 @Entity
 public class CustomerNew {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @OneToOne
-    @JoinColumn(name="id")
     @MapsId
     private CustomerInfo customerInfo;
+
+    public CustomerInfo getCustomerInfo() {
+        return customerInfo;
+    }
+
+    public void setCustomerInfo(CustomerInfo customerInfo) {
+        this.customerInfo = customerInfo;
+    }
 
     public Long getId() {
         return id;
