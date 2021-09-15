@@ -28,7 +28,8 @@ public class EmployeEmbeddableDEMO {
             parkingSpot.setAssignedTo(employeeNew);
             locationDetails.setParkingSpot(parkingSpot);
             employeeNew.setLocation(locationDetails);
-            //persist only customer, no need to persist customerinfo explicitly
+
+            em.persist(parkingSpot);
             em.persist(employeeNew);
             em.getTransaction().commit();
 

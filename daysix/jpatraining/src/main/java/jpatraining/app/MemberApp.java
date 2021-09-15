@@ -14,11 +14,12 @@ import main.java.jpatraining.entities.Member;
  */
 public class MemberApp {
 
+
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		
 		MemberDAOImpl memberDao =  new MemberDAOImpl();
 		boolean isMemberAvailable;
@@ -29,8 +30,6 @@ public class MemberApp {
 		Member member = new Member();
 		member.setId(18);
 		member.setName("Schneider Electric");
-		//String memberAdded = memberDao.addMember(member);
-		//System.out.println(memberAdded);
 		System.out.println("*************************************");
 		//Get all members
 		List<Member> membersList =memberDao.findAllMembers();
