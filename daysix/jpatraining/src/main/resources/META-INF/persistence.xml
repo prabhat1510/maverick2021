@@ -19,6 +19,9 @@
 		<class>main.java.jpatraining.onetooneuni.Student</class>
 		<class>main.java.jpatraining.entities.AirFlight</class>
 		<class>main.java.jpatraining.entities.AirPassengerProfile</class>
+		<class>main.java.jpatraining.onetooneuni.OrderNew</class>
+		<class>main.java.jpatraining.onetooneuni.CustomerInfo</class>
+		<class>main.java.jpatraining.onetooneuni.CustomerNew</class>
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"
