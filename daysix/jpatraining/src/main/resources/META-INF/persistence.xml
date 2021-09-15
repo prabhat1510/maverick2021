@@ -22,6 +22,9 @@
 		<class>main.java.jpatraining.onetooneuni.OrderNew</class>
 		<class>main.java.jpatraining.onetooneuni.CustomerInfo</class>
 		<class>main.java.jpatraining.onetooneuni.CustomerNew</class>
+		<class>main.java.jpatraining.onetooneuni.EmployeeNew</class>
+		<class>main.java.jpatraining.onetooneuni.ParkingSpot</class>
+
 
 	<properties>
 		<property name="javax.persistence.jdbc.driver"
