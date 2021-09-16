@@ -3,10 +3,16 @@
  */
 package main.java.jpatraining.app;
 
+import java.io.BufferedInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.text.NumberFormat;
 import java.util.List;
 
 import main.java.jpatraining.dao.MemberDAOImpl;
 import main.java.jpatraining.entities.Member;
+
+import javax.xml.parsers.DocumentBuilderFactory;
 
 /**
  * @author admi
@@ -19,7 +25,13 @@ public class MemberApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+		NumberFormat nf;
+		Charset cs;
+		DocumentBuilderFactory dbf;
+		Integer index;
+		Boolean bool;
+		InputStreamReader isr;
+		BufferedInputStream bis;
 		
 		MemberDAOImpl memberDao =  new MemberDAOImpl();
 		boolean isMemberAvailable;

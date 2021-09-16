@@ -8,7 +8,7 @@ import javax.persistence.ManyToMany;
 import java.util.Set;
 
 @Entity
-public class CustomerPN {
+class CustomerPN {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
