@@ -67,12 +67,19 @@ public class Junit5ExampleTest {
     }
 
     @Test
-    public void test_firstMethod(){
+    public void test_firstMethodForNullValues(){
         //assertNull(null);
         Junit5Example junit5Example = new Junit5Example();
-        assertNull(junit5Example.firstMethod(),"null value");
+        //assertNull(junit5Example.firstMethod(),"null value");
+        assertNotEquals(null,junit5Example.firstMethod(),"Not Null value is returnedd");
+        assertNotNull(junit5Example.firstMethod(),"Message is returned");
     }
-
+    @Test
+    public void test_firstMethodForNotNullValues(){
+        //assertNull(null);
+        Junit5Example junit5Example = new Junit5Example();
+        assertEquals("Hello",junit5Example.firstMethod(),"Message is returned");
+    }
 
     @Test
     public void test_SecondMethod(){
