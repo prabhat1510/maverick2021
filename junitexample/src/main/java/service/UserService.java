@@ -2,7 +2,11 @@ package service;
 
 import entities.User;
 
+import java.time.LocalDateTime;
+import java.util.Date;
+
 public interface UserService {
 
-    public boolean addUser(User user);
+    public User addUser(User user);
+    public Date getCurrentTime();
 }
