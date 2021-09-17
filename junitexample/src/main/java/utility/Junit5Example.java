@@ -1,7 +1,10 @@
 package utility;
 
-public class Junit5Example {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Junit5Example {
+        List<String> list;
     public String firstMethod(){
         //System.out.println("First Method implemented");
         String message = "Hello";
@@ -15,8 +18,11 @@ public class Junit5Example {
         return message;
     }
 
-    public void secondMethod(){
+    public void secondMethod(String message){
+        /**
         String message =firstMethod();
-        message=null;
+        message=null;***/
+         list = new ArrayList<>();
+         list.add(message);
     }
 }

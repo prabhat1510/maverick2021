@@ -92,6 +92,10 @@ public class Junit5ExampleTest {
         assertNotEquals();
         assertNotSame();*/
         //assertEquals(,junit5Example.secondMethod(),"Nothing to be displayed");
+        junit5Example.secondMethod("Hello");
+        assertEquals(1,junit5Example.list.size(),"list is update");
+        assertNotEquals(0,junit5Example.list.size(),"list is update");
+        assertEquals(0,junit5Example.list.size(),"list is update");
 
     }
 
