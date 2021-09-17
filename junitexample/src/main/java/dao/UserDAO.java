@@ -8,5 +8,6 @@ import java.util.Date;
 public interface UserDAO {
     public User addUser(User user);
     public Date getCurrentTime();
+    public void display();
 
 }
