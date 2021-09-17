@@ -1,6 +1,7 @@
 package service;
 
 import dao.UserDAO;
+import dao.UserDAOImpl;
 import entities.User;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -30,7 +31,6 @@ class UserServiceTest {
         doaMock = Mockito.mock(UserDAO.class);
         userService = Mockito.mock(UserService.class);
     }
-
      @Test
     void testAddUser_returnsNewUser() {
         User user = new User();
@@ -52,5 +52,16 @@ class UserServiceTest {
          //void method  Without doNothing ---
          doaMock.display();
          Mockito.verify(doaMock, times(1)).display();
+    }
+
+    @Test
+    void testAddUser_isUserAdded() {
+        when(doaMock.isUserAdd()).thenReturn(true);
+        UserDAO userDAO = new UserDAOImpl();
+        boolean result = userDAO.isUserAdd();
+        assertFalse(result);
+        doaMock.isUserAdd();
+        Mockito.verify(doaMock).isUserAdd();
+
     }
 }

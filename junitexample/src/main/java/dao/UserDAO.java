@@ -9,5 +9,7 @@ public interface UserDAO {
     public User addUser(User user);
     public Date getCurrentTime();
     public void display();
+    public boolean isUserAdd();
+    
 
 }
