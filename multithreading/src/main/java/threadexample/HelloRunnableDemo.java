@@ -6,6 +6,7 @@ public class HelloRunnableDemo {
 
       Thread t = new Thread(runnable);
       t.start();//it invokes run method implicitly
+      System.out.println(t.isAlive());
       System.out.println(t.getName());
         System.out.println(t.getThreadGroup());
         System.out.println(t.getPriority());
