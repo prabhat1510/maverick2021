@@ -13,9 +13,9 @@ public class HelloThreadDemo {
         System.out.println(Thread.currentThread().isDaemon());
         System.out.println(Thread.currentThread().isInterrupted());
         System.out.println("************************");
-        System.out.println(t.ge);
         System.out.println(t.getName());
-        System.out.println(t.getThreadGroup());
+        System.out.println("Thread Group parent is -----"+t.getThreadGroup().getParent());
+        System.out.println("Thread Group is -----"+t.getThreadGroup());
         System.out.println(t.getPriority());
         System.out.println(t.getId());
         System.out.println(t.isDaemon());
