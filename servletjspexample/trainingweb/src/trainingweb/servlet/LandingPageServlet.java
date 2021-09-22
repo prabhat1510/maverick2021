@@ -31,7 +31,7 @@ public class LandingPageServlet extends HttpServlet {
 	private MemberService memberService;
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+		System.out.println(getServletInfo());
 		RequestDispatcher dispatcher =  req.getRequestDispatcher("example.jsp");
 		dispatcher.forward(req, resp);
 		

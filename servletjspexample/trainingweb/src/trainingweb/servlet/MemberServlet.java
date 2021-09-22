@@ -29,6 +29,7 @@ public class MemberServlet extends HttpServlet {
 	private static final long serialVersionUID = -1167177567744081860L;
 	
 	private MemberService memberService;
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -40,17 +41,26 @@ public class MemberServlet extends HttpServlet {
 		req.setAttribute("allEmployees", allEmployees);
 		RequestDispatcher dispatcher = req.getRequestDispatcher("employee.jsp");
 		dispatcher.forward(req, resp);
-		
-		
-		int memberId =  Integer.parseInt(req.getParameter("memeberId"));
 		**/
-		req.getParameter("id");
+		
+		//int memberId =  Integer.parseInt(req.getParameter("memeberId"));
+
+		//int memberId = Integer .parseInt(req.getParameter("id"));
 		List<Member> allMembers = memberService.findAllMembers();
-		req.setAttribute("allMembers", allMembers); 
+		req.setAttribute("allMembers", allMembers);
 		RequestDispatcher dispatcher =  req.getRequestDispatcher("member.jsp");
 		dispatcher.forward(req, resp);
-		
+
 	}
-
-
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//super.doPost(req, resp);
+		Member member = new Member();
+		member.setId(15);
+		member.setName("Servlet Members");
+		String message = memberService.addMember(member);
+		req.setAttribute("message",message);
+		RequestDispatcher dispatcher =  req.getRequestDispatcher("message.jsp");
+		dispatcher.forward(req, resp);
+	}
 }

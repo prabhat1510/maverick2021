@@ -77,7 +77,7 @@
 					<div class="col-md-6">
 					<legend>Member List</legend>
 						<div class="table-responsive">
-							<table id="example" class="table table-striped table-bordered">							
+							<table id="example" class="table table-striped table-bordered">
 							<thead>
 								<tr>
 									<th>Member Id</th>

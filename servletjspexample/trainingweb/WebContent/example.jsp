@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import = "java.util.Date" %>
+<%@ page import = "trainingweb.servlet.LandingPageServlet" %>
  
 
 <!DOCTYPE html>
@@ -14,6 +15,7 @@
 int x; //It creates multiple object for multiple requests
 Date d = new Date();
 System.out.println("Current Date= "+d);
+System.out.println(LandingPageServlet.getServletInfo());
 		
 %>
 <prefix_Tag:custom_Tag></prefix_Tag:custom_Tag>
