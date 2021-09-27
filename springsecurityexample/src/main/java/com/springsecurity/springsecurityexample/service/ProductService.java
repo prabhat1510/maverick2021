@@ -1,6 +1,6 @@
 package com.springsecurity.springsecurityexample.service;
 
-import com.springsecurity.springsecurityexample.model.Product;
+import com.springsecurity.springsecurityexample.entities.Product;
 
 import java.util.List;
 import java.util.Optional;

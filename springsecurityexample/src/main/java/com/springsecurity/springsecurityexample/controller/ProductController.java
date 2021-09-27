@@ -3,7 +3,7 @@ package com.springsecurity.springsecurityexample.controller;
 import java.util.List;
 
 import com.springsecurity.springsecurityexample.exceptions.ResourceNotFoundException;
-import com.springsecurity.springsecurityexample.model.Product;
+import com.springsecurity.springsecurityexample.entities.Product;
 import com.springsecurity.springsecurityexample.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;

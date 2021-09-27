@@ -1,6 +1,6 @@
 package com.springsecurity.springsecurityexample.repository;
 
-import com.springsecurity.springsecurityexample.model.Product;
+import com.springsecurity.springsecurityexample.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.springsecurity.springsecurityexample.controller;
 
-import com.springsecurity.springsecurityexample.model.Product;
+import com.springsecurity.springsecurityexample.entities.Product;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

@@ -1,5 +1,6 @@
 package com.springsecurity.springsecurityexample.configuration;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -29,6 +30,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.javachinna")).paths(PathSelectors.any()).build().apiInfo(apiInfo())
                 .securitySchemes(securitySchemes()).securityContexts(List.of(securityContext()));
+
     }
 
     private ApiInfo apiInfo() {

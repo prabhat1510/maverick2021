@@ -3,7 +3,7 @@ package com.springsecurity.springsecurityexample.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.springsecurity.springsecurityexample.model.Product;
+import com.springsecurity.springsecurityexample.entities.Product;
 import com.springsecurity.springsecurityexample.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
