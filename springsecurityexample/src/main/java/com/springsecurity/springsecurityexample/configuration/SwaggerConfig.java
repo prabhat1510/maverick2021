@@ -28,7 +28,7 @@ public class SwaggerConfig {
 
     @Bean
     public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.javachinna")).paths(PathSelectors.any()).build().apiInfo(apiInfo())
+        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.springsecurity.springsecurityexample")).paths(PathSelectors.any()).build().apiInfo(apiInfo())
                 .securitySchemes(securitySchemes()).securityContexts(List.of(securityContext()));
 
     }
