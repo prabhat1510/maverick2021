@@ -1,5 +1,5 @@
 package com.springsecurity.springsecurityexample.entities;
-
+/**
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,3 +12,4 @@ public class Customer {
     private int custId;
     private String custName;
 }
+**/
